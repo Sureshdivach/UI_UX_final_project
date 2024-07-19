@@ -1,0 +1,339 @@
+.main_cont{
+    /* border: 1px solid gray; */
+      margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         width: 100%;
+     
+     }
+nav{
+    /* border: 1px solid gray; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   
+}
+.logo{
+    width: 12%;
+  }
+.logo img{
+    width: 40%;
+    height: 70px;
+    border-radius: 50px;
+}
+.link{
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    font-size: large;
+    font-weight: bold;
+ 
+      
+}
+.link a{
+    text-decoration: none;
+    border-bottom: 2px solid aliceblue;
+    
+    padding: 5px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link a:hover{
+    color: rgb(4, 63, 255);  
+    background-color: white;    
+   
+}
+.user{
+     width: 15%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+  
+}
+.user img{
+    width: 25%;
+    height: 70px;
+    border-radius: 50px;
+}
+.user span{
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin: auto;
+   font-weight: bold;
+   
+   text-align: right;
+}
+
+.form_container{
+    width: 100%;
+    margin: 20px auto;
+    /* border: 1px solid gray; */
+}
+#form {
+    width: 30%;
+    margin: 20px auto;
+    color: rgb(81, 9, 129);
+    padding: 20px;
+    border-radius: 10px;
+     font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(250, 163, 2);
+    padding: 5px;
+    border-radius: 0px 20px 10px 50px;
+}
+
+input,label {
+    width: 97%;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;      
+}
+a {
+    color: rgb(255, 157, 10);
+    font-weight: bold;
+}
+.btns {
+    width: 95%;
+    margin: 20px auto;
+    color: rgb(0, 119, 255);
+    text-align: center;
+    border: none;
+}
+#btn {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(30, 255, 0);
+    border-radius: 10px;
+    font-size: x-large;
+    color: blue;
+    font-weight: bold;
+}
+#btn:hover {
+    background-color: rgb(255, 94, 0);
+    transition: ease-in-out 1s;
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+/* footer section css--------------------------------------------- */
+footer{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+}
+.footer_div{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width:200px) and (max-width:468px) {
+    .main_cont{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+        width: 100%;
+    
+    }
+    /* nav section----------------------------------------------- */
+    nav{
+       
+        padding: 0px;
+        
+    }    
+    .logo{
+        width: 45%;
+       }
+       .log img{
+        width: 30%;
+       }
+       .link{
+        display: none;
+       }
+       .user{
+        width: 50%;
+       }
+       .user img{
+        width: 35%;
+       }
+/* -------login form and registration form-------------- */
+#form {
+    width: 90%;
+    margin: 20px auto;
+    color: rgb(81, 9, 129);
+    padding: 10px;
+    border-radius: 10px;   
+    font-size:large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+input,label {
+    width: 94%;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+    margin: auto;  
+      
+}
+h2 {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(250, 163, 2);
+    padding: 5px;
+    border-radius: 0px 20px 10px 50px;
+    
+}
+/* footer------------------------------------------------------- */
+footer{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+}
+.footer_div{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    display: block;
+  
+  padding: 10px;
+}
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+}
+
+
+
+@media screen and (min-width:469px) and (max-width:721px) {
+
+    nav{
+       
+        padding: 0px;
+        
+    }    
+    .logo{
+        width: 40%;
+       }
+       .log img{
+        width: 30%;
+       }
+       .link{
+        display: none;
+       }
+       .user{
+        width: 40%;
+       }
+       .user img{
+        width: 40%;
+       }
+    /* registration form------------------------------------------------ */
+#form {
+    width: 90%;
+    margin: 20px auto;
+    color: rgb(81, 9, 129);
+    padding: 20px;
+    border-radius: 10px;   
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+input,
+label {
+    width: 98%;
+    margin: auto;
+}
+/* footer------------------------------------------------------- */
+footer{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+}
+.footer_div{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    display: block;
+  
+  padding: 10px;
+}
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+
+@media screen and (min-width:722px) and (max-width:1020px) {
+    nav{
+       
+        padding: 0px;
+        
+    }   
+    #form {
+        width: 90%;
+        margin: 20px auto;
+        color: rgb(81, 9, 129);
+        padding: 20px;
+        border-radius: 10px;   
+        font-size: x-large;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    input,
+    label {
+        width: 98%;
+        margin: auto;
+    }
+   /* footer------------------------------------------------------- */
+footer{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+}
+.footer_div{
+    background-color: rgb(33, 5, 51);
+    color: rgb(255, 255, 255);
+    display: block;
+  
+  padding: 10px;
+}
+.copyright{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+    }
+    
+
