@@ -294,11 +294,29 @@ footer{
 
 
 @media screen and (min-width:722px) and (max-width:1020px) {
+    
     nav{
-       
-        padding: 0px;
+       width: auto;
+        padding: 5px;
         
-    }   
+    }    
+    .logo{
+        width: 25%;
+       }
+       .log img{
+        width: 30%;
+       }
+       .link{
+       width: auto;
+        display: block;
+        gap: 10px;
+       }
+       .user{
+        width: 20%;
+       }
+       .user img{
+        width: 40%;
+       }
     #form {
         width: 90%;
         margin: 20px auto;
