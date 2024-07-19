@@ -8,7 +8,7 @@
      }
 nav{
     /* border: 1px solid gray; */
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: space-between;
     background-color: rgb(33, 5, 51);
@@ -129,7 +129,26 @@ a {
     cursor: pointer;
     transform: scale(0.98);
 }
-
+/* -------------------------------------hero section-------------------------------- */
+.hero_section img{
+    width: 100%;
+}
+.hero_section div p{
+ /* width: 95%; */
+ padding: 50px;
+ margin: auto;
+ height: 120vh;
+ background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    /* align-items: center; */
+    display: grid;
+    background-size: 100%;
+}
 /* footer section css--------------------------------------------- */
 footer{
     background-color: rgb(33, 5, 51);
@@ -208,6 +227,21 @@ h2 {
     border-radius: 0px 20px 10px 50px;
     
 }
+.hero_section div p{
+    /* width: 100%; */
+    padding:20px;
+    margin: 5px auto;
+    height:30vh;
+    background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp);
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       font-size:small;
+       color: rgb(255, 255, 255);
+       /* align-items: center; */
+       display: grid;
+   }
 /* footer------------------------------------------------------- */
 footer{
     background-color: rgb(33, 5, 51);
@@ -271,6 +305,22 @@ label {
     width: 98%;
     margin: auto;
 }
+.hero_section div p{
+    /* width: 100%; */
+    padding:20px;
+    margin: 5px auto;
+    height:30vh;
+    background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp);
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-weight: bold;
+       font-size:small;
+       color: rgb(255, 255, 255);
+       /* align-items: center; */
+       display: grid;
+   }
+
 /* footer------------------------------------------------------- */
 footer{
     background-color: rgb(33, 5, 51);
