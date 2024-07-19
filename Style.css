@@ -15,7 +15,7 @@ nav{
     color: rgb(255, 255, 255);
     padding: 5px;
     position: sticky;
-    top: 0;
+       top: 0;
     z-index: 100;
    
 }
@@ -130,14 +130,16 @@ a {
     transform: scale(0.98);
 }
 /* -------------------------------------hero section-------------------------------- */
-.hero_section img{
+.hero_section background img{
     width: 100%;
+    height: 150px;
 }
 .hero_section div p{
  /* width: 95%; */
  padding: 50px;
  margin: auto;
- height: 120vh;
+ height: 850px;
+ 
  background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,6 +150,28 @@ a {
     /* align-items: center; */
     display: grid;
     background-size: 100%;
+}
+
+/* ------------------------api section------------------------------- */
+#api_section{
+    width: 100%;     
+}
+#cart {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#cart div {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+img{
+    width: 80%;
+    height: 250px;
 }
 /* footer section css--------------------------------------------- */
 footer{
@@ -242,6 +266,17 @@ h2 {
        /* align-items: center; */
        display: grid;
    }
+
+#cart {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+#cart div {    
+    padding: 25px;     
+}
+
 /* footer------------------------------------------------------- */
 footer{
     background-color: rgb(33, 5, 51);
@@ -270,23 +305,23 @@ footer{
 
     nav{
        
-        padding: 0px;
+        padding: 10px;
         
     }    
     .logo{
-        width: 40%;
+        width: 30%;
        }
        .log img{
-        width: 30%;
+        width: 25%;
        }
        .link{
         display: none;
        }
        .user{
-        width: 40%;
+        width: 50%;
        }
        .user img{
-        width: 40%;
+        width: 25%;
        }
     /* registration form------------------------------------------------ */
 #form {
@@ -320,6 +355,17 @@ label {
        /* align-items: center; */
        display: grid;
    }
+
+   /* api section-------------------------------- */
+   #cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#cart div {    
+    padding: 15px;     
+}
 
 /* footer------------------------------------------------------- */
 footer{
@@ -383,6 +429,32 @@ footer{
         width: 98%;
         margin: auto;
     }
+    .hero_section div p{
+        /* width: 100%; */
+        padding:20px;
+        margin: 5px auto;
+        height:50vh;
+        background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp);
+           background-repeat: no-repeat;
+           background-size: cover;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-weight: bold;
+           font-size:large;
+           color: rgb(255, 255, 255);
+           /* align-items: center; */
+           display: grid;
+       }
+/* api section-------------------------------- */
+#cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#cart div {    
+    padding: 15px;     
+}
+
    /* footer------------------------------------------------------- */
 footer{
     background-color: rgb(33, 5, 51);

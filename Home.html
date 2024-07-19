@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             </div>
         </nav>
         <div class="hero_section">
-            <div>
+                     <div>
                 <p>
                     Hay <br>
                     I am Suresh kumar <br>
@@ -43,7 +44,7 @@
         </div>
 
         <div id="api_section">
-            <h1>Our Product</h1>
+            <h1 style="text-align: center; background-color: rgb(45, 20, 68); color: aliceblue; padding: 10px;">Our Product</h1>
             <div id="cart">
 
             </div>
@@ -94,9 +95,73 @@
                 </div>
             </div>
             <div class="copyright">
-                <h4>Developer:- Shri Suresh Kumar Hc ,Tcg SCRB , Rajasthan, Copyright © 2024 . All rights reserved.
+                <h5>Developer:- Shri Suresh Kumar Hc ,Tcg SCRB , Rajasthan, Copyright © 2024 . All rights reserved.
                     Disclaimer
-                    Website Last Updated : Jul 11, 2024</h4>
+                    Website Last Updated : Jul 11, 2024</h5>
             </div>
         </footer>
     </div>
+
+</body>
+<script>
+    let arr1 = JSON.parse(localStorage.getItem("loggedInuser"))
+    let user = document.getElementById("user_login")
+    user_login.innerHTML = arr1.name
+
+    //    Api call section------------------------------------------------------//
+    let arr = []
+    let con = document.getElementById("api_section")
+    async function getApi() {
+        try {
+            let res = await axios.get("https://fakestoreapi.com/products")
+            console.log(res.data)
+            arr = res.data
+            displayData()
+            // console.log(arr)
+        } catch (err) {
+            console.log(err.message)
+        }
+    }
+    getApi()
+
+    function displayData() {
+        cart.innerHTML = ""
+        arr.forEach((ele) => {
+            let cart = document.getElementById("cart")
+            let div = document.createElement("div")
+            let img = document.createElement('img');
+            img.src = ele.image;
+            let h2 =document.createElement("h2")
+            h2.innerText = `price ${ele.price}$`
+            let h3 = document.createElement('h3');
+            h3.innerText = ele.title;
+            let p = document.createElement('p');
+            p.innerText = ele.description;
+            let btndiv=document.createElement("div1")
+            let button = document.createElement("btn")
+            button.innerText = "Add to Cart"
+            button.style.backgroundColor = "green"
+            button.style.color = "white"
+            button.style.padding = "10px 5px"
+            button.style.margin = "10px"
+             button.style.borderRadius = "10px"
+            let button1 = document.createElement("btn1")
+            button1.innerText = "Buy"
+            button1.style.backgroundColor = "Red"
+            button1.style.color = "white"
+            button1.style.padding = "10px 30px"
+            button1.style.borderRadius = "10px"
+            button1.style.margin = "10px"
+            btndiv.append(button, button1)
+            div.append(img,h2, h3, p,btndiv );
+            cart.append(div)
+            api_section.append(cart)
+        })
+    }
+    displayData()
+
+
+
+</script>
+
+</html>
