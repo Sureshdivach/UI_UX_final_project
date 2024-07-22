@@ -10,28 +10,8 @@
 
 <body>
     <div class="main_cont">
-        <nav>
-            <div class="logo">
-                <!-- <img src="https://thumbs.dreamstime.com/b/nature-logo-22551943.jpg" alt=""> -->
-                <img src="https://t4.ftcdn.net/jpg/03/29/62/41/240_F_329624148_v2AWtFr3Dg9NEe2tE8Eum4uwEgLaIuU4.jpg"
-                    alt="">
-            </div>
-            <div class="link">
-                <a href="./index.html">Home</a>
-                <a href="">Contact</a>
-                <a href="./registration.html">Sign up</a>
-                <a href="./index.html">Sign In</a>
-
-
-            </div>
-            <div class="user">
-                <span id="user_login">User login</span>
-                <img src="https://banner2.cleanpng.com/20180329/zue/kisspng-computer-icons-user-profile-person-5abd85306ff7f7.0592226715223698404586.jpg"
-                    alt="">
-            </div>
-        </nav>
-        <div class="form_container" >
-            <form id="form" >
+        <div class="form_container">
+            <form id="form">
                 <h2>Registration form</h2>
                 <label for="">Name:- </label><br>
                 <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
@@ -48,89 +28,32 @@
                 </div>
                 <label for="">Already registration:-<a href="./index.html">Click here to login</a></label>
 
-
-
             </form>
         </div>
-
-        <footer>
-            <div class="footer_div">
-                <div>
-
-                    <p>
-                    <h3>contact Us</h3>
-                    <hr>
-                    india: <br><br>
-                    1800 103 1906 (toll free) <br><br>
-                    1800 220 229 (toll free-COVID Support) <br><br>
-                    (022) - 40919191 (Chargeable number) 24X7 <br><br>
-                    For Overseas Contact <a href="">Click Here</a>
-
-                    </p>
-                </div>
-                <div>
-
-                    <p>
-                    <h3>Quick Access</h3>
-                    <hr>
-                    Interest Rate <br>
-                    Service Charge <br>
-                    Policies & Guidelines <br>
-                    Doorstep banking <br>
-                    Smart Banking <br>
-                    Safe Banking <br>
-                    BCSBI <br>
-                    IBBI panel of Insolvency Professionals for Jul 1, 2024 to Dec 31, 2024 <br>
-                    4th National Online Quiz on Insolvency and Bankruptcy Code, 2016</p>
-                </div>
-                <div>
-
-                    <p>
-                    <h3>Internal Engagements</h3>
-                    <hr>
-                    Media Center <br>
-                    Regional Rural Banks <br>
-                    Treasury <br>
-                    Training Centres <br>
-                    Auditors Of The Bank <br>
-                    CVC link for integrity pledge <br>
-                    Syndicate Asba
-                    </p>
-                </div>
-            </div>
-            <div class="copyright">
-                <h5>Developer:- Shri Suresh Kumar Hc ,Tcg SCRB , Rajasthan, Copyright © 2024 . All rights reserved.
-                    Disclaimer
-                    Website Last Updated : Jul 11, 2024</h5>
-            </div>
-        </footer>
-
     </div>
-
-
 </body>
 <script>
     let arr = JSON.parse(localStorage.getItem("users")) || []
-    let form= document.getElementById("form")
+    let form = document.getElementById("form")
     let btn = document.getElementById("btn")
-    btn.addEventListener("click",userdetails)
-    function userdetails(e){
+    btn.addEventListener("click", userdetails)
+    function userdetails(e) {
         e.preventDefault()
-let obj ={
-    name:document.getElementById("name").value,
-    father:document.getElementById("father").value,
-    email:document.getElementById("email").value,
-    Mobile:document.getElementById("mobile").value,
-    password:document.getElementById("password").value,
+        let obj = {
+            name: document.getElementById("name").value,
+            father: document.getElementById("father").value,
+            email: document.getElementById("email").value,
+            Mobile: document.getElementById("mobile").value,
+            password: document.getElementById("password").value,
 
-}
-console.log(obj)
-arr.push(obj)
-localStorage.setItem("users",JSON.stringify(arr))
-alert("Data saved successfully")
-form.reset()
-window.location.href="index.html"
-console.log(arr)
+        }
+        console.log(obj)
+        arr.push(obj)
+        localStorage.setItem("users", JSON.stringify(arr))
+        alert("Data saved successfully")
+        form.reset()
+        window.location.href = "index.html"
+        console.log(arr)
 
     }
 </script>
