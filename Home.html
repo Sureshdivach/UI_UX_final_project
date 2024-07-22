@@ -7,13 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <div class="main_cont">
         <nav>
             <div class="logo">
-                <!-- <img src="https://thumbs.dreamstime.com/b/nature-logo-22551943.jpg" alt=""> -->
                 <img src="https://t4.ftcdn.net/jpg/03/29/62/41/240_F_329624148_v2AWtFr3Dg9NEe2tE8Eum4uwEgLaIuU4.jpg"
                     alt="">
             </div>
@@ -32,44 +32,53 @@
             </div>
         </nav>
         <div class="hero_section">
-                     <div>
-                <p>
-                    Hay ! <br>
-                    I am Suresh kumar <br>
-                    Full Stack Web Developer <br>
-                    I live in jaipur,Rajasthan,India <br>
-                    A highly focused and reliable Front-End Developer with 1 year experience. <br> My expertise include
-                    HTML, CSS, JavaScript,BootStrap,Node.js and Git.</p>
+            <div data-aos="flip-left" data-aos-duration="1000" ease-in-out="15s">
+                <div>
+                    <p>
+                        Hay ! <br>
+                        I am Suresh kumar <br>
+                        Full Stack Web Developer <br>
+                        I live in jaipur,Rajasthan,India <br>
+                        A highly focused and reliable Front-End Developer with 1 year experience. <br> My expertise
+                        include
+                        HTML, CSS, JavaScript,BootStrap,Node.js and Git.</p>
+                </div>
             </div>
         </div>
-<!-- Api section------------------------------------------------------------------------------- -->
+        <!-- Api section------------------------------------------------------------------------------- -->
         <div id="api_section">
-            <h1 style="text-align: center; background-color: rgb(45, 20, 68); color: aliceblue; padding: 10px;">Our Product</h1>
-            <div id="cart">
+            <h1 style="text-align: center; background-color: rgb(45, 20, 68); color: aliceblue; padding: 10px;">Our
+                Product</h1>
+           
+                <div id="cart">
+                   
+                </div>
+           
+        </div>
+        <!-- contact us section------------------------------------------------------------------------------------ -->
+        <div class="contact_section">
+
+            <div class="contact_div">
+                              <form id="contact_form">
+                    <h1 style=" text-align: center;">Contact Us</h1>
+                    <hr><br><br>
+                    <label for="">Name</label><br>
+                    <input type="text" name="name" placeholder="Name" required><br><br>
+                    <label for="">Email</label><br>
+                    <input type="email" name="email" placeholder="Email" required><br><br>
+                    <label for="">Address</label><br>
+                    <input type="text" name="subject" placeholder="Address" required><br><br>
+                    <label for="">Message</label><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br><br>
+                    <div> <button id="contact_btn"> Submit</button></div>
+                </form>
+            </div>
+            <div class="aside_image">
+                <img src="https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y="
+                    alt="">
             </div>
         </div>
-<!-- contact us section------------------------------------------------------------------------------------ -->
-<div class="contact_section">
-       
-    <div class="contact_div">           
-        <form id="contact_form">
-            <h1 style=" text-align: center;">Contact Us</h1><hr><br><br>
-            <label for="">Name</label><br>
-            <input type="text" name="name" placeholder="Name" required><br><br>
-            <label for="">Email</label><br>
-            <input type="email" name="email" placeholder="Email" required><br><br>
-            <label for="">Address</label><br>
-            <input type="text" name="subject" placeholder="Address" required><br><br>
-            <label for="">Message</label><br>
-            <textarea name="message" placeholder="Message" required></textarea><br><br>
-          <div> <button id="contact_btn"> Submit</button></div> 
-        </form>
-    </div>
-    <div class="aside_image">
-        <img src="https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y=" alt="">
-    </div>
-</div>
- <!-- footer section------------------------------------------------------------------------------------------ -->
+        <!-- footer section------------------------------------------------------------------------------------------ -->
         <footer>
             <div class="footer_div">
                 <div>
@@ -118,12 +127,17 @@
             <div class="copyright">
                 <h5>Developer:- Shri Suresh Kumar Hc ,Tcg SCRB , Rajasthan, Copyright © 2024 . All rights reserved.
                     Disclaimer
-                    Website Last Updated : Jul 11, 2024</h5>
+                    Website Last Updated : Jul 22, 2024</h5>
             </div>
         </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
+
 <script>
     let arr1 = JSON.parse(localStorage.getItem("loggedInuser"))
     let user = document.getElementById("user_login")
@@ -152,20 +166,20 @@
             let div = document.createElement("div")
             let img = document.createElement('img');
             img.src = ele.image;
-            let h2 =document.createElement("h2")
+            let h2 = document.createElement("h2")
             h2.innerText = `price ${ele.price}$`
             let h3 = document.createElement('h3');
             h3.innerText = ele.title;
             let p = document.createElement('p');
             p.innerText = ele.description;
-            let btndiv=document.createElement("div1")
+            let btndiv = document.createElement("div1")
             let button = document.createElement("btn")
             button.innerText = "Add to Cart"
             button.style.backgroundColor = "green"
             button.style.color = "white"
             button.style.padding = "10px 5px"
             button.style.margin = "10px"
-             button.style.borderRadius = "10px"
+            button.style.borderRadius = "10px"
             let button1 = document.createElement("btn1")
             button1.innerText = "Buy"
             button1.style.backgroundColor = "Red"
@@ -174,7 +188,7 @@
             button1.style.borderRadius = "10px"
             button1.style.margin = "10px"
             btndiv.append(button, button1)
-            div.append(img,h2, h3, p,btndiv );
+            div.append(img, h2, h3, p, btndiv);
             cart.append(div)
             api_section.append(cart)
         })

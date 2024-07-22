@@ -91,16 +91,24 @@ nav{
 }
 h2 {
     text-align: center;
-    background-color: rgb(250, 163, 2);
+    border-bottom: 1px solid gray;
+    background-color: rgb(183, 150, 204);
+    color: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 0px 20px 10px 50px;
+    /* color: rgb(144, 67, 192); */
 }
 input,label {
     width: 97%;
     margin: auto;
     padding: 10px;
-    font-weight: bold;      
+    font-weight: bold; 
+ 
+ 
+  
+     
 }
+
 a {
     color: rgb(255, 157, 10);
     font-weight: bold;
@@ -137,16 +145,19 @@ a {
  padding: 50px;
  margin: auto;
  height: 850px;
+
  background-image: url(https://4kwallpapers.com/images/walls/thumbs_3t/2854.jpg);
- /* background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp); */
-    background-repeat: no-repeat;
+/* background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202307/christopher-gower-m_hrflhgabo-unsplash-sixteen_nine.jpg?VersionId=LEIuXirwwcZ8XPrnu3GcBeSmv3FR7V1q&size=690:388); */
+background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: x-large;
-    color: rgb(255, 208, 0);
-    align-content: end;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    align-content:start;
+    text-align: center;
     display: grid;
+    line-height: 2.2;
 }
 
 /* ------------------------api section------------------------------- */
@@ -306,25 +317,22 @@ h2 {
     width: 90%;
     margin: auto;
     text-align: center;
-    background-color: rgb(250, 163, 2);
+    /* background-color: rgb(250, 163, 2); */
     padding: 5px;
     border-radius: 0px 20px 10px 50px;
     
 }
 /* hero section--------------------------------------------------------------- */
 .hero_section div p{
-    /* width: 100%; */
-    padding:20px;
-    margin: 5px auto;
-    height:30vh;
-    /* background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp); */
+       padding:20px;
+       margin: 5px auto;
+       height:30vh;
        background-repeat: no-repeat;
        background-size: cover;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        font-weight: bold;
        font-size:small;
-       color: rgb(255, 255, 255);
-       /* align-items: center; */
+       line-height: 1.5;
        display: grid;
    }
 /*  api section---------------------------- */
@@ -371,7 +379,7 @@ footer{
     background-color: rgb(33, 5, 51);
     color: rgb(255, 255, 255);
     display: block;
-  
+  text-align: center;
   padding: 10px;
 }
 .copyright{
@@ -424,18 +432,14 @@ label {
     margin: auto;
 }
 .hero_section div p{
-    /* width: 100%; */
-    padding:20px;
+     padding:20px;
     margin: 5px auto;
     height:30vh;
-    /* background-image: url(https://wallpapers.com/images/high/tree-resembling-cerebral-cortex-xgqhghhr3d8pr4lt.webp); */
        background-repeat: no-repeat;
        background-size: cover;
        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        font-weight: bold;
        font-size:small;
-       color: rgb(255, 255, 255);
-       /* align-items: center; */
        display: grid;
    }
 
@@ -478,13 +482,14 @@ footer{
     color: rgb(255, 255, 255);
     margin: 20px auto;
     padding: 10px;
+   
 }
 .footer_div{
     background-color: rgb(33, 5, 51);
     color: rgb(255, 255, 255);
     display: block;
-  
-  padding: 10px;
+   padding: 10px;
+   text-align: center;
 }
 .copyright{
     font-size: 20px;
@@ -545,7 +550,7 @@ footer{
            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
            font-weight: bold;
            font-size:large;
-           color: rgb(255, 255, 255);
+           /* color: rgb(255, 255, 255); */
            /* align-items: center; */
            display: grid;
        }
@@ -602,9 +607,11 @@ footer{
     background-color: rgb(33, 5, 51);
     color: rgb(255, 255, 255);
     display: block;
-  
+    text-align: center;
+    font-size: large;
   padding: 10px;
 }
+
 .copyright{
     font-size: 20px;
     font-weight: bold;
