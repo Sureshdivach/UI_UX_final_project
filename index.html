@@ -36,15 +36,16 @@
             email: document.getElementById("email").value,
             password: document.getElementById("password").value,
         }
+        if(newobj.email=="" && newobj.password==""){
+            alert("please enter your details ")
+            return;
+        }  
         let valueCheck = arrforlogin.find((ele) => (
-            ele.email === newobj.email && ele.password === newobj.password
-        ))
+            ele.email === newobj.email && ele.password === newobj.password ))
         if (valueCheck) {
             localStorage.setItem("loggedInuser", JSON.stringify(valueCheck))
-
             alert("login success")
             window.location.href = "Home.html"
-
         } else {
             alert("login failed please first sign up your details")
             window.location.href = "registration.html"
